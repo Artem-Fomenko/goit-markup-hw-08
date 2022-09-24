@@ -1,0 +1,36 @@
+.our-skills {
+    padding-top: 94px;
+}
+
+.icon-skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--team-color);
+    height: 120px;
+    margin-bottom: 30px;
+}
+
+.skills-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.skills-list {
+    display: flex;
+    column-gap: 30px;
+    >li {
+            width: 270px;
+        }
+}
+
+.text {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--secondary-color);
+}
