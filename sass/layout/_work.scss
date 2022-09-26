@@ -1,6 +1,11 @@
-.work,
-.team,
-.clients {
+.work-box {
+    display: none;
+}
+@media screen and (min-width: 1200px) {
+    .work-box {
+        display: block;
+    }
+    .work {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -36,3 +41,5 @@
     justify-content: center;
     align-items: center;
 }
+}
+
