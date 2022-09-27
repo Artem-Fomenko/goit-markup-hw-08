@@ -49,8 +49,7 @@ a.menu__link_current {
     display: none; }
 .page-navigation_position {
     display: flex;
-    align-items: center;  
-    
+    align-items: center;      
 }
 .menu_position {
     display: flex;
@@ -73,16 +72,7 @@ a.menu__link_current {
     &:focus {
         color: var(--hover-color);
     }
-    &::after {
-        position: absolute;
-        display: block;
-        content: '';
-        height: 4px;
-        width: 100%;
-        left: 0;
-        bottom: -1px;
-        background-color: var(--hover-color);
-    }
+    
 } 
 .contact__icon-mail,
 .contact__icon-phone {
@@ -111,6 +101,18 @@ a.menu__link_current {
     &:hover,
     &:focus {
         color: var(--hover-color);
+    }
+}
+a.menu__link_current {
+      &::after {
+        position: absolute;
+        display: block;
+        content: '';
+        height: 4px;
+        width: 100%;
+        left: 0;
+        bottom: -1px;
+        background-color: var(--hover-color);
     }
 }
 }

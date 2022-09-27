@@ -156,16 +156,6 @@ a.menu__link_current {
   .menu__link:hover, .menu__link:focus {
     color: var(--hover-color);
   }
-  .menu__link::after {
-    position: absolute;
-    display: block;
-    content: "";
-    height: 4px;
-    width: 100%;
-    left: 0;
-    bottom: -1px;
-    background-color: var(--hover-color);
-  }
   .contact__icon-mail,
 .contact__icon-phone {
     margin-right: 10px;
@@ -193,6 +183,16 @@ a.menu__link_current {
   }
   .main-contacts__contact:hover, .main-contacts__contact:focus {
     color: var(--hover-color);
+  }
+  a.menu__link_current::after {
+    position: absolute;
+    display: block;
+    content: "";
+    height: 4px;
+    width: 100%;
+    left: 0;
+    bottom: -1px;
+    background-color: var(--hover-color);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -820,6 +820,9 @@ a.menu__link_current {
   .list_position:not(:last-child) {
     margin-bottom: 30px;
   }
+  .portfolio-link {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 768px) {
   .filtr-list {
@@ -1182,7 +1185,7 @@ a.menu__link_current {
     color: var(--hover-color);
   }
   .mobile-menu-contacts {
-    padding-top: 306px;
+    padding-top: 220px;
   }
   .mobile-menu-contacts__tel {
     font-weight: 500;
